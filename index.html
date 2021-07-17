@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rosarivo&display=swap"
+      rel="stylesheet"
+    />
+    <title>wedding rings</title>
+  </head>
+  <body>
+    <div class="slide__menu">
+      <p class="slide__menu_back">
+        <img src="assets/back.png" alt="" />
+      </p>
+      <p>portfolio</p>
+      <p>blog</p>
+      <p>weddings</p>
+      <p>contact</p>
+    </div>
+    <header>
+      <nav>
+        <div class="nav__left">
+          <img class="logo" src="assets/weddingRing.png" alt="logo" />
+          <p class="logo__text">wedding rings</p>
+        </div>
+        <div class="nav__right">
+          <a href="#" class="nav__link">portfolio</a>
+          <a href="#" class="nav__link">weddings</a>
+          <a href="#" class="nav__link">reviews</a>
+          <a href="#" class="nav__link">blogs</a>
+          <img class="burger" src="assets/burger.png" alt="menu" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="section__one">
+        <div class="heading">
+          <h1>
+            Making your <br />
+            wedding special
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Exercitationem, consequuntur similique. Numquam, unde. Molestiae,
+            commodi possimus soluta quibusdam maiores perferendis vitae
+            praesentium officiis saepe rem doloremque. Maxime minima nisi
+            dolores?
+          </p>
+          <button class="btn">our weddings</button>
+        </div>
+        <span class="primaryImage">
+          <img class="" src="assets/primaryImage.png" alt="" />
+        </span>
+        <span class="secondaryImage">
+          <img class="" src="assets/secondaryImage.png" alt="" />
+        </span>
+      </section>
+
+      <section class="section__two">
+        <div class="first__person">
+          <span class="first__person_img">
+            <img class="" src="assets/nathan.png" alt="" />
+          </span>
+          <div class="first__person_details">
+            <h3 class="names">Nathan & Bianca Pereira</h3>
+            <p class="message">
+              From the bottom of our hearts we would like to say the biggest
+              THANK YOU!!! They are BEAUTIFUL, BREATHTAKING and everything we
+              could have ever dream ed of. Ronny you captured the raw emotion in
+              our eyes, the natural moments of pure bliss plus all the magic in
+              between. We are so incredibly grateful to have had you photograph
+              our wedding and we thank you once again for your amazing artistry,
+              Thank you!
+            </p>
+          </div>
+        </div>
+        <div class="second__person">
+          <span class="second__person_img">
+            <img class="" src="assets/second.png" alt="" />
+          </span>
+          <div class="second__person_details">
+            <h3 class="names">Nathan & Bianca Pereira</h3>
+            <p class="message">
+              From the bottom of our hearts we would like to say the biggest
+              THANK YOU!!! They are BEAUTIFUL, BREATHTAKING and everything we
+              could have ever dream ed of. Ronny you captured the raw emotion in
+              our eyes, the natural moments of pure bliss plus all the magic in
+              between. We are so incredibly grateful to have had you photograph
+              our wedding and we thank you once again for your amazing artistry,
+              Thank you!
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div>
+          <h6>Wedding rings</h6>
+          <p>follow at wedding rings for more</p>
+          <div class="social__logos">
+            <img src="assets/facebook.png" alt="" />
+            <img src="assets/instagram.png" alt="" />
+            <img src="assets/pinterest.png" alt="" />
+            <img src="assets/whatsapp.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div>
+        <h6>company</h6>
+        <p>Wedding Home</p>
+        <p>about us</p>
+        <p>careers</p>
+        <p>Terms and privacy</p>
+      </div>
+      <div>
+        <h6>find Vendors</h6>
+        <p>Budget</p>
+        <p>Guest List</p>
+        <p>Vendors Manager</p>
+      </div>
+      <div>
+        <h6>planning tool</h6>
+        <p>Real wedding</p>
+        <p>Hashtag generator</p>
+        <p>weddingtimeline</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(".burger").on("click", function () {
+        $(".slide__menu").addClass("slide__show");
+      });
+      $(".slide__menu_back").on("click", function () {
+        $(".slide__menu").removeClass("slide__show");
+      });
+      $(document).on("scroll", function () {
+        $(".slide__menu").removeClass("slide__show");
+      });
+    </script>
+  </body>
+</html>
